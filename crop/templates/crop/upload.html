@@ -1,0 +1,13 @@
+{% extends "crop/base.html" %}
+{% block content %}
+	<br>
+	<section class="py-5">
+		<h2>upload!</h2>/
+		<form method ="post" enctype="multipart/form-data">
+			{% csrf_token %}
+			<input type="file" name="document">
+			<button type="submit">upload</button>
+		</form>
+
+	</section>
+{% endblock content %}
